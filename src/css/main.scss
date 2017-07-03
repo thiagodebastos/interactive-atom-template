@@ -11,3 +11,32 @@
 .interactive-atom {
     margin: 0 !important;
 }
+
+
+.content__main-column--interactive, .article__body {
+ 
+             p, h2{
+                 @include mq(tablet){
+                     max-width: 620px;
+                 }
+ 
+                 @include mq(1140px){
+                     margin-left: 160px;
+                 }
+ 
+                 @include mq(wide){
+                     margin-left: 240px;
+                 }
+             }
+ 
+             p {
+                 margin-bottom: 20px;
+             }
+ 
+             h2 {
+                 @include fs-header(3);
+                 margin-top: 25px;
+             }
+ 
+}
+ 
